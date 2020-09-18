@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokemon Weight</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="headder">
+        <img class="pokeImg" src="https://purepng.com/public/uploads/medium/purepng.com-pokeballpokeballdevicepokemon-ballpokemon-capture-ball-17015278258617dhmi.png">
+        <h1>Pokemon Weight Calculator</h1>
+    </div>
+    <div class="form-container">
+        <p>Name: <input type="text" class="valid" id="fPokeName" name="fPokeName"></p>
+        <input type="button" id="fButton" value="Add Pokemon">
+    </div>
+    <div id="warning">
+        <p>That Pokemon was not found</p>
+    </div>
+
+    <div id="biggercontainer">
+        <p id="list-title">Selected Pokemon</p>
+        <div class="list-container">
+            <ul class="list" id="list">
+            
+            </ul>
+        </div>
+        <div class="calculator">
+            <p>Total Weight:</p>
+            <p id="weight">0</p>
+        </div>
+    
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
